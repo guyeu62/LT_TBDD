@@ -21,20 +21,20 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ThucHanh3App()
+            TinhToanApp()
         }
     }
 }
 
 @Composable
-fun ThucHanh3App() {
+fun TinhToanApp() {
     MaterialTheme {
-        ThucHanh3Screen()
+        TinhToanScreen()
     }
 }
 
 @Composable
-fun ThucHanh3Screen() {
+fun TinhToanScreen() {
 
     var soA by remember { mutableStateOf("") }
     var soB by remember { mutableStateOf("") }
